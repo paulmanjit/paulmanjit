@@ -1,0 +1,67 @@
+
+
+</web-app>
+        <?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+<servlet>
+  <servlet-name>Login</servlet-name>
+  <servlet-class>backend.Login</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>SubmitRequest</servlet-name>
+  <servlet-class>backend.SubmitRequest</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>SubmitRequest</servlet-name>
+  <url-pattern>/SubmitRequest</url-pattern>
+</servlet-mapping>
+<servlet>
+  <servlet-name>UpdateProfile</servlet-name>
+  <servlet-class>backend.UpdateProfile</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>UploadProfilePic</servlet-name>
+  <servlet-class>backend.UploadProfilePic</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>ComposeMessage</servlet-name>
+  <servlet-class>backend.ComposeMessage</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>Login</servlet-name>
+  <url-pattern>/Login</url-pattern>
+</servlet-mapping>
+<servlet>
+  <servlet-name>Register</servlet-name>
+  <servlet-class>backend.Register</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>Register</servlet-name>
+  <url-pattern>/Register</url-pattern>
+</servlet-mapping>
+<servlet>
+  <servlet-name>Logout</servlet-name>
+  <servlet-class>backend.Logout</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>Logout</servlet-name>
+  <url-pattern>/Logout</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+  <servlet-name>UpdateProfile</servlet-name>
+  <url-pattern>/UpdateProfile</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+  <servlet-name>UploadProfilePic</servlet-name>
+  <url-pattern>/UploadProfilePic</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+  <servlet-name>ComposeMessage</servlet-name>
+  <url-pattern>/ComposeMessage</url-pattern>
+</servlet-mapping>
+<session-config>
+  <session-timeout>
+    30
+  </session-timeout>
+</session-config>
+</web-app>
